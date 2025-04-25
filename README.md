@@ -1,14 +1,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/smartsystemslab-uf/project-2-harshit-raj15">
+  <a href="https://github.com/harshit-raj15/SoC-Pong-Game">
     <img src="images/logo.jpg" alt="Logo" width="150" height="150">
   </a>
 
-  <h3 align="center">Project-2</h3>
+  <h3 align="center">Pong Game</h3>
 
   <p align="center">
-    Pong Game (Player Vs Environment)
+    Player Vs Environment with Audio Feedback
   </p>
 </p>
 
@@ -31,18 +31,15 @@
 
 ## About The Project
 
-This project focuses on System-on-Chip design implementation using the Urbana Board with a Microblaze V softcore processor on a Spartan 7 FPGA. The comprehensive hands-on experience includes peripheral IP integration, bus protocol implementation, and system-level debugging across three main tasks. 
-The first part includes implementing a basic SoC running a "Hello World" C application on the Microblaze V processor. 
-The second task involves generating an APB component with RSA cipher decoding capabilities, requiring custom C code development for testing. The final task includes creating a Player vs. Environment (PvE) Pong game by modifying an existing AXI peripheral IP, implementing paddle controls through AXI GPIO, and developing ball trajectory calculations within the Microblaze V processor. 
-This implementation requires an understanding of AXI addressing protocols and proper IP packaging in Vivado. The project emphasizes the practical application of SoC concepts.
-[Pong Game](https://github.com/smartsystemslab-uf/project-2-harshit-raj15)
+This project focuses on System-on-Chip design implementation using the Urbana Board with a Microblaze V softcore processor on a Spartan 7 FPGA. The comprehensive hands-on experience includes peripheral IP integration, bus protocol implementation, and system-level debugging across four main tasks. The first task involves generating 8-bit audio tables for different Pong game scenarios-single 0.25 s tones for paddle hits and scoring, plus a "Mary Had a Little Lamb" melody upon win or loss. The second task requires developing a PWM driver to run the audio-out port on the Urbana Board, leveraging Vivado IP creation and custom driver code for audible output. In the third task, a non-DMA SoC is built by integrating the PWM hardware and audio tables into the PvE Pong design from Lab 2, using AXI GPIO for paddle control and C software on Microblaze V to orchestrate game logic and audio playback. The final task enhances performance by incorporating the AXI Central DMA (CDMA) to transfer audio samples to the PWM driver, demonstrating mastery of AXI memory-mapped protocols and DMA-based data movement. Overall, this implementation underscores practical SoC concepts-IP packaging, AXI addressing, DMA integration, and system debugging-culminating in an interactive Pong game with real-time audio feedback.
+[Pong Game](https://github.com/harshit-raj15/SoC-Pong-Game)
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
 - Clone the Repository.
-- Launch Vivado and open the project file, add the constraints file.
+- Launch Vivado and open the project file, add IP folder in the project settings.
 - Run Synthesis → Implementation → Bitstream Generation in Vivado.
 - Export the hardware from the vivado to obtain the .xsa file.
 - Create a new vitis workspace and also generate a platform with the .xsa file that you have exported in last step
@@ -50,11 +47,8 @@ This implementation requires an understanding of AXI addressing protocols and pr
 - Use a USB to programmer/load the generated bitstream onto the Spartan-7 FPGA board.
 - Play the Game!!
 
-<p>You can find all the required IPs inside project_ip folder (It includes the APB_LED_CTL IP and updated MypongIP).</p>
-<p>You can find the project files where I combined all the IPs to create a final project inside project_3_led_rsa_pong folder.</p>
-<p>You can also see the block diagram of the complete system attached as pdf named Project2_Block_Design.</p>
-<p>You can also directly program the board by opening the vitis project file in this repository named vitis_ws_led_rsa_pong. </p> 
-<p>Get the .xsa file and c/cpp file from the repository named as design_1_wrapper and helloworld respectively.</p>
+<p>You can find all the required IPs inside ip_repo folder.</p>
+<p>You can find the implementaion/files of all the tasks inside their respective folders.</p>
 
 <!-- USAGE EXAMPLES -->
 
@@ -90,8 +84,8 @@ The table below shows the offset values of the APB LED CTL which you can reffer 
 
 The following video shows the working of the Pong game on the Urbana board XC7S50-CSGA324-1 by RealDigital.
 
-- [Watch the demo video 1](videos/Project2a.mp4)
-- [Watch the demo video 2](videos/Project2b.mp4)
+- [Watch the demo video 1](videos/)
+- [Watch the demo video 2](videos/)
 
 <!-- LICENSE -->
 
@@ -104,12 +98,12 @@ All softwares are free to use for commercial and educational purposes with prope
 ## Authors
 
 Harshit Raj - harshitraj@ufl.edu
+Nitesh Bakhati - nitesh.bakhati@ufl.edu
+Benjamin Jacob - benjaminjacob@ufl.edu
+Alexis Villegas - avillegas2@ufl.edu
 
 ## Acknowledgements
 
 - [AMD](https://www.amd.com/en.html)
 - [Xilins](https://www.xilinx.com/support/download.html)
 - [RealDigital](https://www.realdigital.org/hardware/urbana)
-
-
-
