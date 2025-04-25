@@ -58,8 +58,8 @@ This project focuses on System-on-Chip design implementation using the Urbana Bo
 
 For Task2 we have created a custom IP for PWM wrapped it as AXI_Stream and AXI_MMSlave (You can use anyone of them!).
 <div align="center">
-  <img src="Images/task2_PWM_AXI_MMSlave.png" alt="Screenshot 1" height="300" width="250" />
-  <img src="Images/task2_PWM_AXI_Stream.png" alt="Screenshot 2" height="300" width="250" />
+  <img src="images/task2_PWM_AXI_MMSlave.png" alt="Screenshot 1" height="300" width="250" />
+  <img src="images/task2_PWM_AXI_Stream.png" alt="Screenshot 2" height="300" width="250" />
 </div>
 
 
