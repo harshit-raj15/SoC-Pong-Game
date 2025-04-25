@@ -54,33 +54,46 @@ This project focuses on System-on-Chip design implementation using the Urbana Bo
 
 ## Usage
 
-The complete system will look something like below.
+<p>For Task1 we have created a audio table for all the audio tones that we will be using ahead.</p>
+
+For Task2 we have created a custom IP for PWM wrapped it as AXI_Stream and AXI_MMSlave (You can use anyone of them!).
 <p align="center">
   <a>
-    <img src="images/Project2_Block_Diagram.png" alt="Screenshot 1" width="500" height="300">
+    <img src="images/task2_PWM_AXI_MMSlave.png" alt="Screenshot 1" width="500" height="300">
+  </a>
+    <a>
+    <img src="images/task2_PWM_AXI_Stream.png" alt="Screenshot 2" width="500" height="300">
   </a>
 </p>
 
-The termnial output after implementing the first task will look something like below.
+For Task3 we have developed the SoC with no DMA.
 <p align="center">
   <a>
-    <img src="images/Terminal_Hello_World.png" alt="Screenshot 2" width="500" height="300">
+    <img src="images/task3.png" alt="Screenshot 3" width="500" height="300">
   </a>
 </p>
 
-The termnial output after implementing the whole project will look something like below.
+After Implementing Task3 we got the following output in the terminal.
 <p align="center">
   <a>
-    <img src="images/Terminal_Final_Output.png" alt="Screenshot 3" width="500" height="300">
+    <img src="images/task3_output.png" alt="Screenshot 4" width="500" height="300">
   </a>
 </p>
 
-The table below shows the offset values of the APB LED CTL which you can reffer to give input to the RSA.
+For Task4 we have developed the SoC with AXI-DMA.
 <p align="center">
   <a>
-    <img src="images/Offset_Table.png" alt="Screenshot 3" width="400" height="200">
+    <img src="images/task4.png" alt="Screenshot 5" width="500" height="300">
   </a>
 </p>
+
+After Implementing Task4 we got the following output in the terminal.
+<p align="center">
+  <a>
+    <img src="images/task4_output.png" alt="Screenshot 6" width="500" height="300">
+  </a>
+</p>
+
 
 The following video shows the working of the Pong game on the Urbana board XC7S50-CSGA324-1 by RealDigital.
 
