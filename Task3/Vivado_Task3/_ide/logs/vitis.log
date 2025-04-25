@@ -1,0 +1,90 @@
+16:34:14 INFO  : updated workspace path: 
+16:34:16 INFO  : Successfully created repository data at C:\Users\alexd\AppData\Local\Temp\rigel_lopper_alexd11138877982737292565
+16:34:16 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\alexd\AppData\Local\Temp\rigel_lopper_alexd446863171944747110 -r C:\Users\alexd\AppData\Local\Temp\rigel_lopper_alexd11138877982737292565\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:34:16 INFO  : Embedded Template List generated successfully
+16:34:16 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:34:17 INFO  : Successfully created repository data at C:\Users\alexd\AppData\Local\Temp\rigel_lopper_alexd15680077383379748130
+16:34:17 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\alexd\AppData\Local\Temp\rigel_lopper_alexd18349349386044180240 -r C:\Users\alexd\AppData\Local\Temp\rigel_lopper_alexd15680077383379748130\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:34:18 INFO  : Embedded Template List generated successfully
+16:34:24 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+16:34:24 INFO  : created .gitignore file for the project C:\VitisWS\WS4
+05:47:38 INFO  : updated workspace path: 
+05:47:38 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:47:51 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh14036254083845661213
+05:47:51 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh13928377256543432207 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh14036254083845661213\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:47:52 INFO  : Embedded Template List generated successfully
+05:47:52 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:47:55 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh9561984605626081719
+05:47:55 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh6334220748748881097 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh9561984605626081719\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:47:56 INFO  : Embedded Template List generated successfully
+05:48:26 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:48:27 INFO  : created .gitignore file for the project C:\Users\harsh\Downloads\SoCFinalProject\Task3\Vitis_Task3
+05:48:27 INFO  : Marking the target connection as default Local
+05:48:27 INFO  : Marking the target connection as default Linux Agent
+05:48:27 INFO  : Marking the target connection as default XRTServer
+05:48:27 INFO  : Marking the target connection as default LinuxEmulation
+05:48:27 INFO  : Marking the target connection as default QEMU
+05:59:29 INFO  : updated workspace path: 
+05:59:30 INFO  : Embedded Template List generated successfully
+05:59:30 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:59:36 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh13391856174663033370
+05:59:36 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh1784060663959010071 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh13391856174663033370\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+05:59:37 INFO  : Embedded Template List generated successfully
+05:59:43 INFO  : connection terminated
+05:59:43 INFO  : connection terminated
+05:59:43 INFO  : scheduling shutdown timer for 2 seconds ...
+05:59:46 INFO  : Terminating Vitis C++ Server
+05:59:46 INFO  : Vitis C++ Server terminated
+06:23:34 INFO  : updated workspace path: 
+06:23:41 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh14060602318105618740
+06:23:41 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh1863338111836819359 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh14060602318105618740\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:23:42 INFO  : Embedded Template List generated successfully
+06:23:42 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:23:45 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh13250163093883543139
+06:23:45 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh14187472345170936979 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh13250163093883543139\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:23:46 INFO  : Embedded Template List generated successfully
+06:24:07 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:24:07 INFO  : created .gitignore file for the project C:\Users\harsh\Downloads\SoCFinalProject\Task3\Vitis_Task3
+06:24:07 INFO  : Marking the target connection as default Local
+06:24:07 INFO  : Marking the target connection as default Linux Agent
+06:24:07 INFO  : Marking the target connection as default XRTServer
+06:24:07 INFO  : Marking the target connection as default LinuxEmulation
+06:24:07 INFO  : Marking the target connection as default QEMU
+06:27:50 INFO  : updated workspace path: 
+06:27:51 INFO  : Embedded Template List generated successfully
+06:27:51 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:27:55 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh10975797600702018983
+06:27:55 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh8076104178532185980 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh10975797600702018983\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:27:56 INFO  : Embedded Template List generated successfully
+06:28:04 INFO  : connection terminated
+06:28:04 INFO  : connection terminated
+06:28:04 INFO  : scheduling shutdown timer for 2 seconds ...
+06:28:04 INFO  : scheduling shutdown timer for 2 seconds ...
+06:28:07 INFO  : Terminating Vitis C++ Server
+06:28:07 INFO  : Vitis C++ Server terminated
+06:37:17 INFO  : updated workspace path: 
+06:37:21 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh10294942101042001567
+06:37:21 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh8027884366309664039 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh10294942101042001567\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:37:22 INFO  : Embedded Template List generated successfully
+06:37:22 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:37:26 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh8331454813121010553
+06:37:26 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh4475761567806277270 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh8331454813121010553\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:37:26 INFO  : Embedded Template List generated successfully
+06:37:41 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:37:41 INFO  : created .gitignore file for the project C:\Users\harsh\Downloads\SoCFinalProject\Task3\Vitis_Task3
+06:37:41 INFO  : Marking the target connection as default Local
+06:37:41 INFO  : Marking the target connection as default Linux Agent
+06:37:41 INFO  : Marking the target connection as default XRTServer
+06:37:41 INFO  : Marking the target connection as default LinuxEmulation
+06:37:41 INFO  : Marking the target connection as default QEMU
+06:41:27 INFO  : updated workspace path: 
+06:41:28 INFO  : Embedded Template List generated successfully
+06:41:28 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\repo.py -st  C:\Xilinx\Vitis\2024.2\data\embeddedsw && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:41:32 INFO  : Successfully created repository data at C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh4675426690239162990
+06:41:32 INFO  : cmd.exe, /C, C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\activate.bat && python C:\Xilinx\Vitis\2024.2\data\embeddedsw\scripts\pyesw\\get_template_data.py -d C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh11971327358260164075 -r C:\Users\harsh\AppData\Local\Temp\rigel_lopper_harsh4675426690239162990\.repo.yaml && C:\Xilinx\Vitis\2024.2\tps\win64\lopper-1.1.0\env\Scripts\deactivate.bat
+06:41:32 INFO  : Embedded Template List generated successfully
+06:41:44 INFO  : connection terminated
+06:41:44 INFO  : connection terminated
+06:41:44 INFO  : scheduling shutdown timer for 2 seconds ...
+06:41:46 INFO  : Terminating Vitis C++ Server
+06:41:46 INFO  : Vitis C++ Server terminated

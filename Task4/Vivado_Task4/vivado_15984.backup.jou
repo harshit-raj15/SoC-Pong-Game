@@ -1,0 +1,224 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 24 08:54:06 2025
+# Process ID         : 15984
+# Current directory  : C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent12552 C:\Users\harsh\Downloads\SoCFinalProject\Vivado_Final\Final_V2.xpr
+# Log file           : C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/vivado.log
+# Journal file       : C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final\vivado.jou
+# Running On         : LAPTOP-LC1F7D02
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17009 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 18082 MB
+# Available Virtual  : 7858 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_protocol_converter:2.1 axi_protocol_convert_0
+endgroup
+set_property location {3 893 538} [get_bd_cells axi_protocol_convert_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_1/clk_out1 (100 MHz)} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/axi_protocol_convert_0/M_AXI} Slave {/axi_uartlite_0/S_AXI} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_protocol_convert_0/M_AXI]
+startgroup
+set_property -dict [list CONFIG.READ_WRITE_MODE.VALUE_SRC PROPAGATED] [get_bd_cells axi_protocol_convert_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_protocol_convert_0_M_AXI]
+startgroup
+set_property CONFIG.NUM_SI {2} [get_bd_cells axi_smc]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_cdma_0_M_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_cdma_0/M_AXI] [get_bd_intf_pins axi_protocol_convert_0/S_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_protocol_convert_0/M_AXI] [get_bd_intf_pins axi_smc/S01_AXI]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/design_1_wrapper.xsa
+delete_bd_objs [get_bd_nets axi_cdma_0_cdma_introut]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/design_1_wrapper.xsa
+delete_bd_objs [get_bd_intf_nets axi_cdma_0_M_AXI] [get_bd_intf_nets axi_protocol_convert_0_M_AXI] [get_bd_cells axi_protocol_convert_0]
+delete_bd_objs [get_bd_intf_nets axi_smc_M03_AXI] [get_bd_cells axi_cdma_0]
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property -dict [list \
+  CONFIG.c_include_mm2s {0} \
+  CONFIG.c_include_sg {0} \
+] [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_riscv_0 (Periph)} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+regenerate_bd_layout
+save_bd_design
+close_bd_design [get_bd_designs design_1]
+close_project
+create_project pwm_axi_stream C:/Users/harsh/pwm_axi_stream -part xc7s50csga324-1
+file mkdir C:/Users/harsh/pwm_axi_stream/pwm_axi_stream.srcs/sources_1/new
+close [ open C:/Users/harsh/pwm_axi_stream/pwm_axi_stream.srcs/sources_1/new/pwm_audio.vhd w ]
+add_files C:/Users/harsh/pwm_axi_stream/pwm_axi_stream.srcs/sources_1/new/pwm_audio.vhd
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+ipx::package_project -root_dir {E:/UF/First Year/Second Sem/SoC Design/project_ip/pwm_audio_axi_stream} -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core {e:/UF/First Year/Second Sem/SoC Design/project_ip/pwm_audio_axi_stream/component.xml}
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory {E:/UF/First\ Year/Second\ Sem/SoC\ Design/project_ip/pwm_audio_axi_stream} {e:/UF/First Year/Second Sem/SoC Design/project_ip/pwm_audio_axi_stream/component.xml}
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {{e:/UF/First Year/Second Sem/SoC Design/project_ip/pwm_audio_axi_stream}} [current_project]
+update_ip_catalog
+close_project
+open_project C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.xpr
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+open_bd_design {C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets pwm_audio_axi_0_pwm_out] [get_bd_intf_nets axi_smc_M04_AXI] [get_bd_cells pwm_audio_axi_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:pwm_audio_axi_stream:1.0 pwm_audio_axi_stream_0
+endgroup
+set_property location {5 1727 422} [get_bd_cells pwm_audio_axi_stream_0]
+connect_bd_net [get_bd_ports pwm_out_0] [get_bd_pins pwm_audio_axi_stream_0/pwm_out]
+set_property location {5.5 1955 101} [get_bd_cells pwm_audio_axi_stream_0]
+regenerate_bd_layout
+set_property location {4 1323 745} [get_bd_cells axi_dma_0]
+set_property location {5 1644 746} [get_bd_cells pwm_audio_axi_stream_0]
+startgroup
+set_property -dict [list \
+  CONFIG.c_include_mm2s {1} \
+  CONFIG.c_include_mm2s_dre {0} \
+  CONFIG.c_include_s2mm {0} \
+] [get_bd_cells axi_dma_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins pwm_audio_axi_stream_0/s_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins pwm_audio_axi_stream_0/s_axis_aclk]
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+set_property CONFIG.NUM_MI {4} [get_bd_cells axi_smc]
+endgroup
+startgroup
+set_property CONFIG.NUM_SI {1} [get_bd_cells axi_smc]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+delete_bd_objs [get_bd_addr_segs] [get_bd_addr_segs -excluded]
+assign_bd_address
+validate_bd_design
+startgroup
+set_property CONFIG.c_m_axis_mm2s_tdata_width {8} [get_bd_cells axi_dma_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+set_property range 128K [get_bd_addr_segs {microblaze_riscv_0/Data/SEG_dlmb_bram_if_cntlr_Mem}]
+set_property range 128K [get_bd_addr_segs {microblaze_riscv_0/Instruction/SEG_ilmb_bram_if_cntlr_Mem}]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/design_1_wrapper.xsa
+close_bd_design [get_bd_designs design_1]
+close_project
+open_project C:/Users/harsh/pwm_axi_stream/pwm_axi_stream.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.srcs/sources_1/bd/design_1/design_1.bd}
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tdata] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tdata]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tvalid] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tvalid]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tlast] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tlast]
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+regenerate_bd_layout
+write_hw_platform -fixed -include_bit -force -file C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/design_1_wrapper.xsa
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tready] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tready]
+validate_bd_design
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/design_1_wrapper.xsa
+close_bd_design [get_bd_designs design_1]
+close_project
+open_project C:/Users/harsh/pwm_axi_stream/pwm_axi_stream.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::package_project -root_dir C:/Users/harsh/Downloads/SoCFinalProject/ip_repo/pwm_audio_axi_stream -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Users/harsh/Downloads/SoCFinalProject/ip_repo/pwm_audio_axi_stream/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/harsh/Downloads/SoCFinalProject/ip_repo/pwm_audio_axi_stream c:/Users/harsh/Downloads/SoCFinalProject/ip_repo/pwm_audio_axi_stream/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/Users/harsh/Downloads/SoCFinalProject/ip_repo/pwm_audio_axi_stream {e:/UF/First Year/Second Sem/SoC Design/project_ip/pwm_audio_axi_stream}} [current_project]
+update_ip_catalog
+close_project
+open_project C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/Final_V2.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:pwm_audio_axi_stream:1.0 [get_ips  design_1_pwm_audio_axi_stream_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_pwm_audio_axi_stream_0_0] -no_script -sync -force -quiet
+delete_bd_objs [get_bd_nets axi_dma_0_m_axis_mm2s_tdata] [get_bd_nets axi_dma_0_m_axis_mm2s_tvalid] [get_bd_nets axi_dma_0_m_axis_mm2s_tlast] [get_bd_nets pwm_audio_axi_stream_0_s_axis_tready] [get_bd_nets pwm_audio_axi_stream_0_pwm_out] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells pwm_audio_axi_stream_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:pwm_audio_axi_stream:1.0 pwm_audio_axi_stream_0
+endgroup
+set_property location {6 1995 118} [get_bd_cells pwm_audio_axi_stream_0]
+connect_bd_net [get_bd_ports pwm_out_0] [get_bd_pins pwm_audio_axi_stream_0/pwm_out]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins pwm_audio_axi_stream_0/s_axis]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins pwm_audio_axi_stream_0/s_axis_aclk]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tdata] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tdata]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tlast] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tlast]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tready] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tready]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tvalid] [get_bd_pins pwm_audio_axi_stream_0/s_axis_tvalid]
+regenerate_bd_layout
+validate_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/harsh/Downloads/SoCFinalProject/Vivado_Final/design_1_wrapper.xsa
+close_bd_design [get_bd_designs design_1]

@@ -1,0 +1,1147 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB8E574EF25294126",
+      "device": "xc7s50csga324-1",
+      "gen_directory": "../../../../edit_myip_pong2_v1_0.gen/sources_1/bd/design_6",
+      "name": "design_6",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Pong_Top2_0": "",
+      "VGA": {
+        "Sync_To_Count2_0": "",
+        "VGA_Sync_Porch_0": "",
+        "VGA_Sync_Pulses_0": "",
+        "util_vector_logic_0": ""
+      },
+      "Debounce": {
+        "Debounce_Switch_3": "",
+        "Debounce_Switch_4": "",
+        "Debounce_Switch_0": "",
+        "Debounce_Switch_2": "",
+        "Debounce_Switch_1": ""
+      },
+      "clk_wiz_0": "",
+      "hdmi_tx_0": ""
+    },
+    "interface_ports": {
+      "hdmi_tx_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:hdmi:2.0",
+        "vlnv": "xilinx.com:interface:hdmi_rtl:2.0",
+        "port_maps": {
+          "TMDS_CLK_N": {
+            "physical_name": "hdmi_tx_0_tmds_clk_n",
+            "direction": "O"
+          },
+          "TMDS_DATA_N": {
+            "physical_name": "hdmi_tx_0_tmds_data_n",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "TMDS_CLK_P": {
+            "physical_name": "hdmi_tx_0_tmds_clk_p",
+            "direction": "O"
+          },
+          "TMDS_DATA_P": {
+            "physical_name": "hdmi_tx_0_tmds_data_p",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "i_Switch_0": {
+        "direction": "I"
+      },
+      "i_Switch_1": {
+        "direction": "I"
+      },
+      "i_Switch_2": {
+        "direction": "I"
+      },
+      "i_Switch_3": {
+        "direction": "I"
+      },
+      "i_Switch_4": {
+        "direction": "I"
+      },
+      "clk_100MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_6_clk_100MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "Pong_Top2_0": {
+        "vlnv": "xilinx.com:module_ref:Pong_Top2:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_6_Pong_Top2_0_0",
+        "xci_path": "ip/design_6_Pong_Top2_0_0/design_6_Pong_Top2_0_0.xci",
+        "inst_hier_path": "Pong_Top2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Pong_Top2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_Clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "25000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_6_clk_100MHz",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "i_Col_Count": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_Row_Count": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "i_Game_Start": {
+            "direction": "I"
+          },
+          "i_Paddle_Up_P1": {
+            "direction": "I"
+          },
+          "i_Paddle_Dn_P1": {
+            "direction": "I"
+          },
+          "i_Paddle_Up_P2": {
+            "direction": "I"
+          },
+          "i_Paddle_Dn_P2": {
+            "direction": "I"
+          },
+          "o_Red_Video": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_Blu_Video": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_Grn_Video": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "VGA": {
+        "ports": {
+          "o_Col_Count": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "o_Row_Count": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "i_Red_Video": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "i_Blu_Video": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "i_Grn_Video": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "o_VSync_0": {
+            "direction": "O"
+          },
+          "o_HSync_0": {
+            "direction": "O"
+          },
+          "o_Grn_Video_0": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_Red_Video_0": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "o_Blu_Video_0": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "i_Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "o_vde": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        },
+        "components": {
+          "Sync_To_Count2_0": {
+            "vlnv": "xilinx.com:module_ref:Sync_To_Count2:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_Sync_To_Count2_0_0",
+            "xci_path": "ip/design_6_Sync_To_Count2_0_0/design_6_Sync_To_Count2_0_0.xci",
+            "inst_hier_path": "VGA/Sync_To_Count2_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Sync_To_Count2",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_HSync": {
+                "direction": "I",
+                "parameters": {
+                  "PortType": {
+                    "value": "undef",
+                    "value_src": "ip_prop"
+                  },
+                  "PortType.PROP_SRC": {
+                    "value": "false",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_VSync": {
+                "direction": "I",
+                "parameters": {
+                  "PortType": {
+                    "value": "undef",
+                    "value_src": "ip_prop"
+                  },
+                  "PortType.PROP_SRC": {
+                    "value": "false",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "o_HSync": {
+                "direction": "O"
+              },
+              "o_VSync": {
+                "direction": "O"
+              },
+              "o_Col_Count": {
+                "direction": "O",
+                "left": "9",
+                "right": "0"
+              },
+              "o_Row_Count": {
+                "direction": "O",
+                "left": "9",
+                "right": "0"
+              }
+            }
+          },
+          "VGA_Sync_Porch_0": {
+            "vlnv": "xilinx.com:module_ref:VGA_Sync_Porch:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_VGA_Sync_Porch_0_0",
+            "xci_path": "ip/design_6_VGA_Sync_Porch_0_0/design_6_VGA_Sync_Porch_0_0.xci",
+            "inst_hier_path": "VGA/VGA_Sync_Porch_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "VGA_Sync_Porch",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_HSync": {
+                "direction": "I"
+              },
+              "i_VSync": {
+                "direction": "I"
+              },
+              "i_Red_Video": {
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "i_Grn_Video": {
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "i_Blu_Video": {
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "o_HSync": {
+                "direction": "O"
+              },
+              "o_VSync": {
+                "direction": "O"
+              },
+              "o_Red_Video": {
+                "direction": "O",
+                "left": "2",
+                "right": "0"
+              },
+              "o_Grn_Video": {
+                "direction": "O",
+                "left": "2",
+                "right": "0"
+              },
+              "o_Blu_Video": {
+                "direction": "O",
+                "left": "2",
+                "right": "0"
+              }
+            }
+          },
+          "VGA_Sync_Pulses_0": {
+            "vlnv": "xilinx.com:module_ref:VGA_Sync_Pulses:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_VGA_Sync_Pulses_0_0",
+            "xci_path": "ip/design_6_VGA_Sync_Pulses_0_0/design_6_VGA_Sync_Pulses_0_0.xci",
+            "inst_hier_path": "VGA/VGA_Sync_Pulses_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "VGA_Sync_Pulses",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "o_HSync": {
+                "direction": "O",
+                "parameters": {
+                  "PortType": {
+                    "value": "undef",
+                    "value_src": "ip_prop"
+                  },
+                  "PortType.PROP_SRC": {
+                    "value": "false",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "o_VSync": {
+                "direction": "O",
+                "parameters": {
+                  "PortType": {
+                    "value": "undef",
+                    "value_src": "ip_prop"
+                  },
+                  "PortType.PROP_SRC": {
+                    "value": "false",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "o_Col_Count": {
+                "direction": "O",
+                "left": "9",
+                "right": "0"
+              },
+              "o_Row_Count": {
+                "direction": "O",
+                "left": "9",
+                "right": "0"
+              }
+            }
+          },
+          "util_vector_logic_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "ip_revision": "4",
+            "xci_name": "design_6_util_vector_logic_0_0",
+            "xci_path": "ip/design_6_util_vector_logic_0_0/design_6_util_vector_logic_0_0.xci",
+            "inst_hier_path": "VGA/util_vector_logic_0",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "and"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          }
+        },
+        "nets": {
+          "Net": {
+            "ports": [
+              "i_Clk",
+              "VGA_Sync_Porch_0/i_Clk",
+              "VGA_Sync_Pulses_0/i_Clk",
+              "Sync_To_Count2_0/i_Clk"
+            ]
+          },
+          "Sync_To_Count2_0_o_Col_Count": {
+            "ports": [
+              "Sync_To_Count2_0/o_Col_Count",
+              "o_Col_Count"
+            ]
+          },
+          "Sync_To_Count2_0_o_HSync": {
+            "ports": [
+              "Sync_To_Count2_0/o_HSync",
+              "VGA_Sync_Porch_0/i_HSync"
+            ]
+          },
+          "Sync_To_Count2_0_o_Row_Count": {
+            "ports": [
+              "Sync_To_Count2_0/o_Row_Count",
+              "o_Row_Count"
+            ]
+          },
+          "Sync_To_Count2_0_o_VSync": {
+            "ports": [
+              "Sync_To_Count2_0/o_VSync",
+              "VGA_Sync_Porch_0/i_VSync"
+            ]
+          },
+          "VGA_Sync_Porch_0_o_Blu_Video": {
+            "ports": [
+              "VGA_Sync_Porch_0/o_Blu_Video",
+              "o_Blu_Video_0"
+            ]
+          },
+          "VGA_Sync_Porch_0_o_Grn_Video": {
+            "ports": [
+              "VGA_Sync_Porch_0/o_Grn_Video",
+              "o_Grn_Video_0"
+            ]
+          },
+          "VGA_Sync_Porch_0_o_HSync": {
+            "ports": [
+              "VGA_Sync_Porch_0/o_HSync",
+              "o_HSync_0"
+            ]
+          },
+          "VGA_Sync_Porch_0_o_Red_Video": {
+            "ports": [
+              "VGA_Sync_Porch_0/o_Red_Video",
+              "o_Red_Video_0"
+            ]
+          },
+          "VGA_Sync_Porch_0_o_VSync": {
+            "ports": [
+              "VGA_Sync_Porch_0/o_VSync",
+              "o_VSync_0"
+            ]
+          },
+          "VGA_Sync_Pulses_0_o_HSync": {
+            "ports": [
+              "VGA_Sync_Pulses_0/o_HSync",
+              "Sync_To_Count2_0/i_HSync",
+              "util_vector_logic_0/Op1"
+            ]
+          },
+          "VGA_Sync_Pulses_0_o_VSync": {
+            "ports": [
+              "VGA_Sync_Pulses_0/o_VSync",
+              "Sync_To_Count2_0/i_VSync",
+              "util_vector_logic_0/Op2"
+            ]
+          },
+          "i_Blu_Video_1": {
+            "ports": [
+              "i_Blu_Video",
+              "VGA_Sync_Porch_0/i_Blu_Video"
+            ]
+          },
+          "i_Grn_Video_1": {
+            "ports": [
+              "i_Grn_Video",
+              "VGA_Sync_Porch_0/i_Grn_Video"
+            ]
+          },
+          "i_Red_Video_1": {
+            "ports": [
+              "i_Red_Video",
+              "VGA_Sync_Porch_0/i_Red_Video"
+            ]
+          },
+          "util_vector_logic_0_Res": {
+            "ports": [
+              "util_vector_logic_0/Res",
+              "o_vde"
+            ]
+          }
+        }
+      },
+      "Debounce": {
+        "ports": {
+          "o_Switch": {
+            "direction": "O"
+          },
+          "o_Switch1": {
+            "direction": "O"
+          },
+          "o_Switch2": {
+            "direction": "O"
+          },
+          "o_Switch3": {
+            "direction": "O"
+          },
+          "o_Switch4": {
+            "direction": "O"
+          },
+          "i_Switch_0": {
+            "direction": "I"
+          },
+          "i_Switch_1": {
+            "direction": "I"
+          },
+          "i_Switch_2": {
+            "direction": "I"
+          },
+          "i_Switch_3": {
+            "direction": "I"
+          },
+          "i_Switch_4": {
+            "direction": "I"
+          },
+          "i_Clk": {
+            "type": "clk",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "Debounce_Switch_3": {
+            "vlnv": "xilinx.com:module_ref:Debounce_Switch:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_Debounce_Switch_3_0",
+            "xci_path": "ip/design_6_Debounce_Switch_3_0/design_6_Debounce_Switch_3_0.xci",
+            "inst_hier_path": "Debounce/Debounce_Switch_3",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Debounce_Switch",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_Switch": {
+                "direction": "I"
+              },
+              "o_Switch": {
+                "direction": "O"
+              }
+            }
+          },
+          "Debounce_Switch_4": {
+            "vlnv": "xilinx.com:module_ref:Debounce_Switch:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_Debounce_Switch_4_0",
+            "xci_path": "ip/design_6_Debounce_Switch_4_0/design_6_Debounce_Switch_4_0.xci",
+            "inst_hier_path": "Debounce/Debounce_Switch_4",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Debounce_Switch",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_Switch": {
+                "direction": "I"
+              },
+              "o_Switch": {
+                "direction": "O"
+              }
+            }
+          },
+          "Debounce_Switch_0": {
+            "vlnv": "xilinx.com:module_ref:Debounce_Switch:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_Debounce_Switch_0_0",
+            "xci_path": "ip/design_6_Debounce_Switch_0_0/design_6_Debounce_Switch_0_0.xci",
+            "inst_hier_path": "Debounce/Debounce_Switch_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Debounce_Switch",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_Switch": {
+                "direction": "I"
+              },
+              "o_Switch": {
+                "direction": "O"
+              }
+            }
+          },
+          "Debounce_Switch_2": {
+            "vlnv": "xilinx.com:module_ref:Debounce_Switch:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_Debounce_Switch_2_0",
+            "xci_path": "ip/design_6_Debounce_Switch_2_0/design_6_Debounce_Switch_2_0.xci",
+            "inst_hier_path": "Debounce/Debounce_Switch_2",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Debounce_Switch",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_Switch": {
+                "direction": "I"
+              },
+              "o_Switch": {
+                "direction": "O"
+              }
+            }
+          },
+          "Debounce_Switch_1": {
+            "vlnv": "xilinx.com:module_ref:Debounce_Switch:1.0",
+            "ip_revision": "1",
+            "xci_name": "design_6_Debounce_Switch_1_0",
+            "xci_path": "ip/design_6_Debounce_Switch_1_0/design_6_Debounce_Switch_1_0.xci",
+            "inst_hier_path": "Debounce/Debounce_Switch_1",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "Debounce_Switch",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "i_Clk": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "25000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_6_clk_100MHz",
+                    "value_src": "ip_prop"
+                  }
+                }
+              },
+              "i_Switch": {
+                "direction": "I"
+              },
+              "o_Switch": {
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "nets": {
+          "Debounce_Switch_0_o_Switch": {
+            "ports": [
+              "Debounce_Switch_0/o_Switch",
+              "o_Switch"
+            ]
+          },
+          "Debounce_Switch_1_o_Switch": {
+            "ports": [
+              "Debounce_Switch_1/o_Switch",
+              "o_Switch1"
+            ]
+          },
+          "Debounce_Switch_2_o_Switch": {
+            "ports": [
+              "Debounce_Switch_2/o_Switch",
+              "o_Switch2"
+            ]
+          },
+          "Debounce_Switch_3_o_Switch": {
+            "ports": [
+              "Debounce_Switch_3/o_Switch",
+              "o_Switch3"
+            ]
+          },
+          "Debounce_Switch_4_o_Switch": {
+            "ports": [
+              "Debounce_Switch_4/o_Switch",
+              "o_Switch4"
+            ]
+          },
+          "i_Clk_1": {
+            "ports": [
+              "i_Clk",
+              "Debounce_Switch_0/i_Clk",
+              "Debounce_Switch_1/i_Clk",
+              "Debounce_Switch_2/i_Clk",
+              "Debounce_Switch_3/i_Clk",
+              "Debounce_Switch_4/i_Clk"
+            ]
+          },
+          "i_Switch_0_1": {
+            "ports": [
+              "i_Switch_0",
+              "Debounce_Switch_1/i_Switch"
+            ]
+          },
+          "i_Switch_1_1": {
+            "ports": [
+              "i_Switch_1",
+              "Debounce_Switch_0/i_Switch"
+            ]
+          },
+          "i_Switch_2_1": {
+            "ports": [
+              "i_Switch_2",
+              "Debounce_Switch_3/i_Switch"
+            ]
+          },
+          "i_Switch_3_1": {
+            "ports": [
+              "i_Switch_3",
+              "Debounce_Switch_2/i_Switch"
+            ]
+          },
+          "i_Switch_4_1": {
+            "ports": [
+              "i_Switch_4",
+              "Debounce_Switch_4/i_Switch"
+            ]
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "design_6_clk_wiz_0_0",
+        "xci_path": "ip/design_6_clk_wiz_0_0/design_6_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "175.402"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "25.000"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "125.247"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "125.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_25"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "clk_125"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "40.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "8"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIM_SOURCE": {
+            "value": "No_buffer"
+          }
+        }
+      },
+      "hdmi_tx_0": {
+        "vlnv": "realdigital.org:realdigital:hdmi_tx:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_6_hdmi_tx_0_0",
+        "xci_path": "ip/design_6_hdmi_tx_0_0/design_6_hdmi_tx_0_0.xci",
+        "inst_hier_path": "hdmi_tx_0",
+        "parameters": {
+          "C_BLUE_WIDTH": {
+            "value": "3"
+          },
+          "C_GREEN_WIDTH": {
+            "value": "3"
+          },
+          "C_RED_WIDTH": {
+            "value": "3"
+          },
+          "MODE": {
+            "value": "DVI"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "hdmi_tx_0_hdmi_tx": {
+        "interface_ports": [
+          "hdmi_tx_0",
+          "hdmi_tx_0/hdmi_tx"
+        ]
+      }
+    },
+    "nets": {
+      "Debounce_o_Switch": {
+        "ports": [
+          "Debounce/o_Switch",
+          "Pong_Top2_0/i_Paddle_Up_P1"
+        ]
+      },
+      "Debounce_o_Switch1": {
+        "ports": [
+          "Debounce/o_Switch1",
+          "Pong_Top2_0/i_Paddle_Dn_P1"
+        ]
+      },
+      "Debounce_o_Switch2": {
+        "ports": [
+          "Debounce/o_Switch2",
+          "Pong_Top2_0/i_Paddle_Up_P2"
+        ]
+      },
+      "Debounce_o_Switch3": {
+        "ports": [
+          "Debounce/o_Switch3",
+          "Pong_Top2_0/i_Paddle_Dn_P2"
+        ]
+      },
+      "Debounce_o_Switch4": {
+        "ports": [
+          "Debounce/o_Switch4",
+          "Pong_Top2_0/i_Game_Start"
+        ]
+      },
+      "Pong_Top2_0_o_Blu_Video": {
+        "ports": [
+          "Pong_Top2_0/o_Blu_Video",
+          "VGA/i_Blu_Video"
+        ]
+      },
+      "Pong_Top2_0_o_Grn_Video": {
+        "ports": [
+          "Pong_Top2_0/o_Grn_Video",
+          "VGA/i_Grn_Video"
+        ]
+      },
+      "Pong_Top2_0_o_Red_Video": {
+        "ports": [
+          "Pong_Top2_0/o_Red_Video",
+          "VGA/i_Red_Video"
+        ]
+      },
+      "VGA_o_Blu_Video_0": {
+        "ports": [
+          "VGA/o_Blu_Video_0",
+          "hdmi_tx_0/blue"
+        ]
+      },
+      "VGA_o_Col_Count": {
+        "ports": [
+          "VGA/o_Col_Count",
+          "Pong_Top2_0/i_Col_Count"
+        ]
+      },
+      "VGA_o_Grn_Video_0": {
+        "ports": [
+          "VGA/o_Grn_Video_0",
+          "hdmi_tx_0/green"
+        ]
+      },
+      "VGA_o_HSync_0": {
+        "ports": [
+          "VGA/o_HSync_0",
+          "hdmi_tx_0/hsync"
+        ]
+      },
+      "VGA_o_Red_Video_0": {
+        "ports": [
+          "VGA/o_Red_Video_0",
+          "hdmi_tx_0/red"
+        ]
+      },
+      "VGA_o_Row_Count": {
+        "ports": [
+          "VGA/o_Row_Count",
+          "Pong_Top2_0/i_Row_Count"
+        ]
+      },
+      "VGA_o_VSync_0": {
+        "ports": [
+          "VGA/o_VSync_0",
+          "hdmi_tx_0/vsync"
+        ]
+      },
+      "VGA_o_vde": {
+        "ports": [
+          "VGA/o_vde",
+          "hdmi_tx_0/vde"
+        ]
+      },
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_100MHz",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_25": {
+        "ports": [
+          "clk_wiz_0/clk_25",
+          "Debounce/i_Clk",
+          "Pong_Top2_0/i_Clk",
+          "VGA/i_Clk",
+          "hdmi_tx_0/pix_clk"
+        ]
+      },
+      "clk_wiz_0_clk_125": {
+        "ports": [
+          "clk_wiz_0/clk_125",
+          "hdmi_tx_0/pix_clkx5"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "hdmi_tx_0/pix_clk_locked"
+        ]
+      },
+      "i_Switch_0_1": {
+        "ports": [
+          "i_Switch_0",
+          "Debounce/i_Switch_0"
+        ]
+      },
+      "i_Switch_1_1": {
+        "ports": [
+          "i_Switch_1",
+          "Debounce/i_Switch_1"
+        ]
+      },
+      "i_Switch_2_1": {
+        "ports": [
+          "i_Switch_2",
+          "Debounce/i_Switch_2"
+        ]
+      },
+      "i_Switch_3_1": {
+        "ports": [
+          "i_Switch_3",
+          "Debounce/i_Switch_3"
+        ]
+      },
+      "i_Switch_4_1": {
+        "ports": [
+          "i_Switch_4",
+          "Debounce/i_Switch_4"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "clk_rst",
+          "clk_wiz_0/reset"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "hdmi_tx_0/rst"
+        ]
+      }
+    }
+  }
+}

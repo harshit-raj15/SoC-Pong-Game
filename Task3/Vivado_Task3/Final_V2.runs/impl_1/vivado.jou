@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Apr 25 06:33:47 2025
+# Process ID         : 11828
+# Current directory  : C:/Users/harsh/Downloads/SoCFinalProject/Task3/Vivado_Task3/Final_V2.runs/impl_1
+# Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file           : C:/Users/harsh/Downloads/SoCFinalProject/Task3/Vivado_Task3/Final_V2.runs/impl_1/design_1_wrapper.vdi
+# Journal file       : C:/Users/harsh/Downloads/SoCFinalProject/Task3/Vivado_Task3/Final_V2.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-LC1F7D02
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+# CPU Frequency      : 2400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 17009 MB
+# Swap memory        : 1073 MB
+# Total Virtual      : 18082 MB
+# Available Virtual  : 6804 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

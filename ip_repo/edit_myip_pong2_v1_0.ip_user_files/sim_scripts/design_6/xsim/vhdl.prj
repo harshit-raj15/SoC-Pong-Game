@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_6/ip/design_6_Pong_Top2_0_0/sim/design_6_Pong_Top2_0_0.vhd" \
+"../../../bd/design_6/ip/design_6_Sync_To_Count2_0_0/sim/design_6_Sync_To_Count2_0_0.vhd" \
+"../../../bd/design_6/ip/design_6_VGA_Sync_Porch_0_0/sim/design_6_VGA_Sync_Porch_0_0.vhd" \
+"../../../bd/design_6/ip/design_6_VGA_Sync_Pulses_0_0/sim/design_6_VGA_Sync_Pulses_0_0.vhd" \
+"../../../bd/design_6/ip/design_6_Debounce_Switch_3_0/sim/design_6_Debounce_Switch_3_0.vhd" \
+"../../../bd/design_6/ip/design_6_Debounce_Switch_4_0/sim/design_6_Debounce_Switch_4_0.vhd" \
+"../../../bd/design_6/ip/design_6_Debounce_Switch_0_0/sim/design_6_Debounce_Switch_0_0.vhd" \
+"../../../bd/design_6/ip/design_6_Debounce_Switch_2_0/sim/design_6_Debounce_Switch_2_0.vhd" \
+"../../../bd/design_6/ip/design_6_Debounce_Switch_1_0/sim/design_6_Debounce_Switch_1_0.vhd" \
+"../../../bd/design_6/sim/design_6.vhd" \
+
+# Do not sort compile order
+nosort
