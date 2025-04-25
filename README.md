@@ -106,10 +106,10 @@ All softwares are free to use for commercial and educational purposes with prope
 
 ## Authors
 
-Harshit Raj - harshitraj@ufl.edu
-Nitesh Bakhati - nitesh.bakhati@ufl.edu
-Benjamin Jacob - benjaminjacob@ufl.edu
-Alexis Villegas - avillegas2@ufl.edu
+<p>Harshit Raj - harshitraj@ufl.edu</p>
+<p>Nitesh Bakhati - nitesh.bakhati@ufl.edu</p>
+<p>Benjamin Jacob - benjaminjacob@ufl.edu</p>
+<p>Alexis Villegas - avillegas2@ufl.edu</p>
 
 ## Acknowledgements
 
