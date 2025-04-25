@@ -63,7 +63,7 @@ For Task2 we have created a custom IP for PWM wrapped it as AXI_Stream and AXI_M
     alt="Screenshot 1"
     height="300"
     width="250"
-    style="margin-right: 20px;"
+    style="margin-right: 80px;"
   />
   <img
     src="images/task2_PWM_AXI_Stream.png"
