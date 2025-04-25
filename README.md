@@ -57,12 +57,11 @@ This project focuses on System-on-Chip design implementation using the Urbana Bo
 <p>For Task1 we have created a audio table for all the audio tones that we will be using ahead.</p>
 
 For Task2 we have created a custom IP for PWM wrapped it as AXI_Stream and AXI_MMSlave (You can use anyone of them!).
-<p align="center">
-  <a>
-    <img src="images/task2_PWM_AXI_MMSlave.png" alt="Screenshot 1" width="500" height="300">
-    <img src="images/task2_PWM_AXI_Stream.png" alt="Screenshot 2" width="500" height="300">
-  </a>
-</p>
+<div align="center">
+  <img src="Images/task2_PWM_AXI_MMSlave.png" alt="Screenshot 1" height="300" width="250" />
+  <img src="Images/task2_PWM_AXI_Stream.png" alt="Screenshot 2" height="300" width="250" />
+</div>
+
 
 For Task3 we have developed the SoC with no DMA.
 <p align="center">
